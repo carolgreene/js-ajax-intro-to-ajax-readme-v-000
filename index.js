@@ -8,7 +8,7 @@ function getRepositories() {
 
 function showRepositories() {
   var repos = JSON.parse(this.responseText);
-  //console.log(repos);
+  console.log(repos);
   const repoList = `<ul>${repos
     .map(
       r =>
@@ -44,3 +44,18 @@ function showCommits() {
     .join('')}</ul>`;
   document.getElementById('commits').innerHTML = commitsList;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
